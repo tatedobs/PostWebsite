@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+
+
+<div id="post_preview" class="ui main text container segment">
+    <% posts.reverse().forEach(function(post) { %>
+        <hr>
+        <a href="/posts/<%=post._id%>">
+            <div class="ui medium header" id="post-button" tabindex="0"><%=post.title%></div>
+            <div class="ui grid" id="post-preview">
+                <% if(post.image != null) {%>
+                    <div class="four wide column">
+                        <img id="image-container" class="ui rounded image" src="<%- post.image %>">
+                    </div>
+                <% } %>
+                <div class="ten wide column">
+                    <% if(post.body != null && post.body.length > 150) { %>
+                        <p><%= post.body.substring(0, 150) %>...</p>
+                    <% } else {%>
+                        <p><%= post.body %></p>
+                    <% } %>
+                </div>
+            </div>
+        </a>
+    <% }) %>
+</div>
+
+<% include ./partials/footer %>

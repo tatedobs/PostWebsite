@@ -1,0 +1,20 @@
+<% include ./partials/header %>
+
+<h1></h1>
+<h1></h1>
+<form action="/login" method="POST">
+    <div class="ui input">
+        <input id="username-field" type="text" name="username" placeholder="username">
+        <br>
+        <input type="password" name="password" placeholder="password">
+        <button id="login-button" class="ui animated primary button" tabindex="0">
+            <div class="visible content">Login</div>
+            <div class="hidden content">
+                <i class="sign in icon"></i>
+            </div>
+        </button>
+    </div>
+</form>
+
+
+<% include ./partials/footer %>

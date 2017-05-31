@@ -1,0 +1,62 @@
+body {
+    background-color: #ddd;
+}
+
+#post_preview {
+    margin-top: 1em;
+}
+
+#delete {
+    float: right;
+}
+
+#buttons {
+    margin: 0 10px 35px 10px;
+}
+
+.on-right {
+    float:right;
+}
+
+.comment {
+    border-left: 5px solid #006699;
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+#login-button {
+    margin-right: 25px;
+}
+
+#register-button {
+    margin-right: 25px;
+}
+
+#post-container {
+    height: auto;
+    overflow: auto;
+}
+
+#post-button {
+    margin-top: 30px;
+}
+
+#post-preview {
+    color: black;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-block
+}
+
+#image-container-large {
+    width: 50%;
+    float: left;
+    margin-right: 25px;
+}
+
+
+*:focus {
+    outline: 0;
+    outline: none;
+}
