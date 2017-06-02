@@ -30,9 +30,14 @@
                         </button>
                     </a>
                 <% } else {%>
-                    <p>Logged in as <%= currentUser.username %></p>
+                    <a href="#">
+                        <button id="login-button" class="ui button">
+                            <i class="user icon"></i>
+                            <%= currentUser.username %>
+                        </button>
+                    </a>
                     <a href="/logout">
-                        <button id="login-button" class="ui animated secondary button" tabindex="0">
+                        <button id="login-button" class="ui animated secondary button">
                             <div class="visible content">Log Out</div>
                             <div class="hidden content">
                                 <i class="sign out icon"></i>

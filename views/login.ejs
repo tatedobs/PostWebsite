@@ -2,19 +2,61 @@
 
 <h1></h1>
 <h1></h1>
-<form action="/login" method="POST">
-    <div class="ui input">
-        <input id="username-field" type="text" name="username" placeholder="username">
-        <br>
-        <input type="password" name="password" placeholder="password">
-        <button id="login-button" class="ui animated primary button" tabindex="0">
-            <div class="visible content">Login</div>
-            <div class="hidden content">
-                <i class="sign in icon"></i>
+<div class="ui main text container segment">
+    <div class="ui grid">
+        <div class="ten wide column" id="login-grid-area">
+            <div class="ui input" id="login-input-form">
+                <form action="/login" method="POST">
+                    <h3>Login</h3>
+                    <div class="field">
+                        <input id="username-field" type="text" name="username" placeholder="username">
+                    </div>
+                    <br>
+                    <div class="field">
+                        <input id="password-field" type="password" name="password" placeholder="password">
+                    </div>
+                    <br>
+                    <button id="login-page-button" class="ui animated primary button" tabindex="0">
+                        <div class="visible content">Login</div>
+                        <div class="hidden content">
+                            <i class="sign in icon"></i>
+                        </div>
+                    </button>
+                </form>
             </div>
-        </button>
+        </div>
+        <div id="register-grid-area" class="six wide column">
+            <h3>Continue with:</h3>
+            <a href="#">
+                <button class="ui fluid facebook button">
+                    <i class="facebook icon"></i>
+                    Facebook
+                </button>
+            </a>
+            <br>
+            <a href="#">
+                <button class="ui fluid twitter button">
+                    <i class="twitter icon"></i>
+                    Twitter
+                </button>
+            </a>
+            <br>
+            <a href="#">
+                <button class="ui fluid google plus button">
+                    <i class="google plus icon"></i>
+                    Google
+                </button>
+            </a>
+            <br>
+            <a href="/register">
+                <button class="ui fluid positive button">
+                    <i class="add user icon"></i>
+                    Register
+                </button>
+            </a>
+        </div>
     </div>
-</form>
+</div>
 
 
 <% include ./partials/footer %>

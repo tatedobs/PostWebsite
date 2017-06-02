@@ -2,16 +2,29 @@
 
 <h1></h1>
 <h1></h1>
-<form action="/register" method="POST" class="ui form">
-    <input class="ui input" type="text" name="username" placeholder="username">
-    <input class="ui input" type="password" name="password" placeholder="password">
-    <button class="ui animated positive circular button" tabindex="0">
-        <div class="visible content">Sign Up</div>
-        <div class="hidden content">
-            <i class="add user icon"></i>
-        </div>
-    </button>
-</form>
+<div class="ui main text container segment">
+    <div class="ui input" id="login-input-form">
+        <form action="/register" method="POST" class="ui form">
+            <h3>Register</h3>
+            <h5>Username:</h5>
+            <div class="field">
+                <input class="ui input" type="text" name="username" placeholder="username">
+            </div>
+            <h5>Password:</h5>
+            <div class="field">
+                <input class="ui input" type="password" name="password" placeholder="password">
+            </div>
+            <button id="login-page-button" class="ui animated positive button" tabindex="0">
+                <div class="visible content">Sign Up</div>
+                <div class="hidden content">
+                    <i class="add user icon"></i>
+                </div>
+            </button>
+            <h1></h1>
+            <p></p>
+        </form>
+    </div>
+</div>
 
 
 <% include ./partials/footer %>

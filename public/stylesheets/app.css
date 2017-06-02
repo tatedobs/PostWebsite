@@ -55,6 +55,28 @@ body {
     margin-right: 25px;
 }
 
+#login-page-button {
+    float: right;
+}
+
+#login-input-form {
+    width: auto;
+    display: block;
+}
+
+#username-field {
+    width: 100%;
+}
+
+#password-field {
+    width: 100%;
+}
+
+#login-grid-area {
+    padding-right: 10px;
+    border-right: 1px solid gray;
+}
+
 
 *:focus {
     outline: 0;
